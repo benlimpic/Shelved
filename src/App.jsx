@@ -5,6 +5,8 @@ function App() {
     <>
       <header className="App-header">
         <h1>Hello World!</h1>
+        <h4>My name is Ben</h4>
+        <p>Let's be friends!</p>
       </header>
     </>
   );
