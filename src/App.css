@@ -18,13 +18,19 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fade-off {
+  opacity: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes wobb {
@@ -40,16 +46,9 @@
   animation-duration: 400ms;
   display: inline-block;
   transform: translateY(0px);
-  /* font-family: 'Courier New', monospace;
-  font-size: 3.2em;
-  line-height: 1.1; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+
 
 .card {
   padding: 2em;
