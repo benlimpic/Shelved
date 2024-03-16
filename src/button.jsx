@@ -13,7 +13,7 @@ export default function ButtonUsage({ count, setCount }) {
     if (count === 0) {
       return (
         <>
-          <h2 style={{ color: "#E3E3E3" }}>My Name Is Ben</h2>
+          <h2 style={{ color: "#E3E3E3" }}>Nice To Meet You!</h2>
           <Button onClick={handleClick} variant="contained" color="primary">
             Let's Be Friends!
           </Button>
@@ -31,7 +31,7 @@ export default function ButtonUsage({ count, setCount }) {
     } else if (count !== 0 && count % 2 !== 0) {
       return (
         <>
-          <h2 style={{ color: "#1776D2" }}>We're The Best of Friends</h2>
+          <h2 style={{ color: "#1776D2" }}>We're The Best of Friends!</h2>
           <Button onClick={handleClick} variant="contained" color="error">
             Stop Being Friends!
           </Button>

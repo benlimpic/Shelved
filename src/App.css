@@ -6,13 +6,13 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 4em;
+  padding: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #c7c9f3aa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -25,6 +25,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes wobb {
+  0%, 100%   {transform: translateY(0px)}
+  25%  {transform: translateY(-3px)}
+  75%  {transform: translateY(3px)}
+}
+
+.wobble span {
+  animation-name: wobb;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 400ms;
+  display: inline-block;
+  transform: translateY(0px);
+  /* font-family: 'Courier New', monospace;
+  font-size: 3.2em;
+  line-height: 1.1; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
