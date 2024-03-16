@@ -22,18 +22,18 @@ export default function Header() {
 
   React.useEffect(() => {
     if (count === 0) {
-      fade();
       setHeaderColor("#E3E3E3");
       setHeaderText("Hello World");
     } else if (count % 2 === 0) {
-      fade();
+
       setHeaderColor("#D3302F");
       setHeaderText("BooHoo!");
     } else if (count % 2 !== 0) {
-      fade();
+
       setHeaderColor("#1776D2");
       setHeaderText("WooHoo!");
     }
+    fade();
   }, [count, setCount]);
 
   const wobble = (content) => {
