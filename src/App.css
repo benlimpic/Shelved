@@ -14,17 +14,11 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #c7c9f3aa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-.fade-off {
-  opacity: 0;
-}
 
 .fade {
   animation-name: fade;
-  animation-duration: 250ms;
+  animation-duration: 400ms;
   animation-timing-function: ease-in-out;
 }
 
@@ -46,14 +40,4 @@
   animation-duration: 400ms;
   display: inline-block;
   transform: translateY(0px);
-}
-
-
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

@@ -20,22 +20,6 @@ export default function Header() {
     }, 250);
   }
 
-  React.useEffect(() => {
-    if (count === 0) {
-      setHeaderColor("#E3E3E3");
-      setHeaderText("Hello World");
-    } else if (count % 2 === 0) {
-
-      setHeaderColor("#D3302F");
-      setHeaderText("BooHoo!");
-    } else if (count % 2 !== 0) {
-
-      setHeaderColor("#1776D2");
-      setHeaderText("WooHoo!");
-    }
-    fade();
-  }, [count, setCount]);
-
   const wobble = (content) => {
     let text = content.split("");
     const textCode = text.map((x, idx) => {
@@ -53,6 +37,24 @@ export default function Header() {
     });
     return textCode;
   };
+
+  React.useEffect(() => {
+    if (count === 0) {
+      setHeaderColor("#E3E3E3");
+      setHeaderText("Hello World");
+    } else if (count % 2 === 0) {
+
+      setHeaderColor("#D3302F");
+      setHeaderText("BooHoo!");
+    } else if (count % 2 !== 0) {
+
+      setHeaderColor("#1776D2");
+      setHeaderText("WooHoo!");
+    }
+    fade();
+  }, [count, setCount]);
+
+
 
   return (
     <>
