@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonUsage from "./button";
 import Button from "@mui/material/Button";
-import "./App.css";
+import "./style.buttonGame.css";
 
 export default function Header() {
   const [count, setCount] = React.useState(0);

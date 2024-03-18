@@ -1,10 +1,12 @@
 import "./App.css";
-import Header from "./header";
+import ButtonGame from "./button-game/buttonGame";
+import Shelved from "./shelved/shelved";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <ButtonGame />
+      <Shelved />
     </div>
   );
 }
