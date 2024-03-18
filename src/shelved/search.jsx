@@ -8,7 +8,7 @@ export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selection, setSelection] = useState("Books");
   const [result, setResult] = useState([]);
-  // eslint-disable-next-line no-undef
+  // eslint-disable-next-line no-undef, no-unused-vars
   const [apiKey, setAPIKey] = useState(process.env.Book_API);
 
   const getBooks = async () => {

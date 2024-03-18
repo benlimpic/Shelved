@@ -22,13 +22,17 @@
 }
 
 .form-cell {
-  padding: 10px;
+  margin: 10px;
 }
 
 .card {
   display: block;
-  margin: auto;
+  margin: 10px;
   padding: 10px;
+  max-width: 900px;
+  background-color: brown;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px #211f1f;
 }
 
 .card-cell {
