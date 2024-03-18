@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
       define: {
-          'process.env.BookAPI': JSON.stringify(env.BookAPI),
+          'process.env.Book_API': JSON.stringify(env.Book_API),
       },
       plugins: [react()]
   };
