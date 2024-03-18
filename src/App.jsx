@@ -1,11 +1,11 @@
 import "./App.css";
-import ButtonGame from "./button-game/buttonGame";
+// import ButtonGame from "./button-game/buttonGame";
 import Shelved from "./shelved/shelved";
 
 function App() {
   return (
     <div className="App">
-      <ButtonGame />
+      {/* <ButtonGame /> */}
       <Shelved />
     </div>
   );
