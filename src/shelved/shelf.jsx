@@ -1,44 +1,46 @@
-import axios from 'axios';
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
+import Carousel from "react-material-ui-carousel";
+import ShelfItem from "./shelfItem";
+import "./style.shelved.css";
 
+export default function Shelf(props) {
+  const { name, books } = props.testShelf;
 
-export default function Shelf() {
-  const [shelfName, setShelfName] = React.useState("");
+  const hideButtons = ()  => {
+    const buttons = document.querySelectorAll('.css-1m9128y');
+    buttons.forEach(button => button.style.display = 'none');
 
+    const navLeft = document.querySelectorAll('.css-hn784z');
+    navLeft.forEach(button => button.style.display = 'none');
 
-  const handleNameChange = (e) => {
-    setShelfName(e.target.value);
+    const navRight = document.querySelectorAll('.css-1abc02a');
+    navRight.forEach(button => button.style.display = 'none');
   }
 
-  const formSubmit = (e) => {
-    e.preventDefault();
-    createShelf()
-    document.querySelector(".form-1").reset();
-  }
-
-  const createShelf = () => {
-    axios.post('http://localhost:3001/shelf', {
-      shelfName: shelfName
-    })
-    .then((response) => {
-      console.log(response);
-    }
-    )
-    .catch((error) => {
-      console.log(error);
-    });
-  }
-
+  React.useEffect(() => {
+    hideButtons();
+  }, []);
 
   return (
-    <div>
-      <h1>Shelf</h1>
-      <form className="form-1 form-box" onSubmit={formSubmit}>
-        <input className="form-cell" type="text" onChange={handleNameChange} placeholder='Shelf Name'/>
-        <br />
-        <button type="submit" >Create Shelf</button>
-      </form>
+    <div className="shelf">
+      <h4>{name}</h4>
+      <Carousel className="" swipe="true" animation="fade">
+        {books.map((item, i) => (
+          <ShelfItem key={i} item={item} />
+          
+        ))}
+      </Carousel>
     </div>
   );
+
+  
 }
+
+Shelf.propTypes = {
+  testShelf: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    books: PropTypes.array.isRequired,
+  }).isRequired,
+};
 

@@ -1,0 +1,72 @@
+{
+  "shelves": [
+    [
+      {
+        "name": "First Shelf",
+        "books": [
+          {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg"
+          },
+          {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "image":
+              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg"
+          },
+          {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "image":
+              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Second Shelf",
+        "books": [
+          {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg"
+          },
+          {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "image":
+              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg"
+          },
+          {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "image":
+              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Third Shelf",
+        "books": [
+          {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg"
+          },
+          {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "image":
+              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg"
+          },
+          {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "image":
+              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg"
+          }
+        ]
+      }
+    ]
+  ]
+}

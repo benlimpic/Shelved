@@ -1,17 +1,11 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 375px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
 }
-
-.logo {
-  height: 4em;
-  padding: 2em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #c7c9f3aa);
-}
-

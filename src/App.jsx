@@ -1,12 +1,15 @@
 import "./App.css";
 // import ButtonGame from "./button-game/buttonGame";
-import Shelved from "./shelved/shelved";
+import Shelves from "./shelved/shelves";
 
 function App() {
   return (
     <div className="App">
-      {/* <ButtonGame /> */}
-      <Shelved />
+      <div className="container">
+        <h1>SHELVED</h1>
+        
+        <Shelves />
+      </div>
     </div>
   );
 }
