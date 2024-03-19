@@ -6,11 +6,10 @@ import "./style.shelved.css";
 export default function Shelves() {
 
   const [shelves, setShelves] = useState([]);
-
-
+  
   useEffect(() => {
     axios.get("../seed.json").then((response) => {
-      console.log(response.data.shelves);
+
       setShelves(response.data.shelves[0]);
     });
   }

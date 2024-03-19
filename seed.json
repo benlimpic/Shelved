@@ -1,7 +1,8 @@
 {
   "shelves": [
     [
-      {
+      { 
+        "id": 1,
         "name": "First Shelf",
         "books": [
           {
@@ -23,7 +24,8 @@
           }
         ]
       },
-      {
+      { 
+        "id": 2,
         "name": "Second Shelf",
         "books": [
           {
@@ -45,7 +47,8 @@
           }
         ]
       },
-      {
+      { 
+        "id": 3,
         "name": "Third Shelf",
         "books": [
           {
