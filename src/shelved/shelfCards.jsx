@@ -6,7 +6,7 @@ export default function ShelfCards(props) {
 
   return (
     <div className="shelves">
-      <h1 style={{color: "white"}}>{shelf.name}</h1>
+      {/* <h1 style={{color: "white"}}>{shelf.name}</h1> */}
       <div className="shelfRow">
         {shelf.books.map((item, i) => (
           <div className="shelf" id={shelf.id} key={i}>

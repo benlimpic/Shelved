@@ -57,15 +57,20 @@
 
 
 .modal-edit {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    margin: 5px;
     font-size: 20px;
 }
 
+.modal-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%; 
+}
+
 .modal-exit {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    margin: 5px;
     font-size: 20px;
 }

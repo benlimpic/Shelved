@@ -10,6 +10,8 @@ export default function BasicModal(props) {
   const { shelf, open, setOpen } = props;
   const handleClose = () => setOpen(false);
 
+
+
   return (
     <div>
       <Modal
@@ -19,12 +21,15 @@ export default function BasicModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box className="modal-style">
+        <nav className="modal-nav">
           <button className="modal-edit">
             <ModeEditTwoToneIcon />
           </button>
+          <h2>{shelf.name}</h2>
           <button className="modal-exit" onClick={handleClose}>
             <ClearTwoToneIcon />
           </button>
+        </nav>
             <ShelfCards shelf={shelf} />
         </Box>
       </Modal>
