@@ -12,8 +12,14 @@ export default function BookCard(props) {
         <h4>  {title} </h4>
         <img src={image} alt={title + " / " + author} />
         <p >{author}</p>
-        <h5>Summary</h5>
-        <p>{description}</p>
+        <div className="description">
+          <p>
+            Description:
+            <br />
+            <br />
+            {description}
+          </p>
+        </div>
       </div>
     </div>
     </>

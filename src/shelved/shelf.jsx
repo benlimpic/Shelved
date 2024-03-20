@@ -24,6 +24,7 @@ export default function Shelf(props) {
     navRight.forEach(button => button.style.display = 'none');
   }
 
+  
   useEffect(() => {
     hideButtons();
   }, []);
