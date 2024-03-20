@@ -2,33 +2,15 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Carousel from "react-material-ui-carousel";
 import ShelfItem from "./shelfItem";
-import ShelfPage from "./shelf-page/shelfPage";
+import ShelfPage from "./modal/shelfPage";
 import "./style.shelved.css";
 
 export default function Shelf(props) {
   const { name, books,  id} = props.testShelf;
-  const [shelf, setShelf] = useState(props.testShelf);
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-
-  const handleShelf = (e) => {
-    e.preventDefault();
-    console.log("Shelf Clicked", shelf);
-    {open ? handleClose() : handleOpen()}  
-  }
-
-
-
-
-
-
-
-
-
-
-
+  const [shelf] = useState(props.testShelf);
+  const [shelfPageOpen, setShelfPageOpen] = useState(false);
+  const handleOpen = () => setShelfPageOpen(true);
+  const handleClose = () => setShelfPageOpen(false);
 
 
   const hideButtons = ()  => {
@@ -47,15 +29,19 @@ export default function Shelf(props) {
   }, []);
 
   return (
-    <div className="shelf" onClick={handleShelf} id={id}>
-      <h4>{name}</h4>
-      <ShelfPage shelf={shelf} open={open} setOpen={setOpen}/>
-      <Carousel className="" swipe="true" animation="fade">
-        {books.map((item, i) => (
-          <ShelfItem key={i} item={item} />          
-        ))}
-      </Carousel>
-    </div>
+    <>
+      <ShelfPage shelf={shelf} open={shelfPageOpen} handleClose={handleClose}/>
+      <div className="shelf" id={id} onClick={handleOpen}>
+        <div>
+          <h4>{name}</h4>
+          <Carousel className="" swipe="true" animation="fade">
+            {books.map((item, i) => (
+              <ShelfItem key={i} item={item} />          
+              ))}
+          </Carousel>
+        </div>
+      </div>
+    </>
   );
 
   

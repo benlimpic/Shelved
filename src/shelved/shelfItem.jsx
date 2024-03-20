@@ -15,8 +15,10 @@ export default function ShelfItem(props) {
 
 ShelfItem.propTypes = {
   item: PropTypes.shape({
+    bookID: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
   }).isRequired,
 };

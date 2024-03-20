@@ -5,22 +5,28 @@
         "id": 1,
         "name": "First Shelf",
         "books": [
-          {
+          { 
+            "bookID": 1,
             "title": "The Great Gatsby",
             "author": "F. Scott Fitzgerald",
-            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg"
+            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg",
+            "description": "The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan."
           },
-          {
+          { 
+            "bookID": 2,
             "title": "The Catcher in the Rye",
             "author": "J.D. Salinger",
             "image":
-              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg"
+              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg",
+            "description": "The Catcher in the Rye is a novel by J. D. Salinger, partially published in serial form in 1945–1946 and as a novel in 1951. It was originally intended for adults, but is often read by adolescents for its themes of angst and alienation, and as a critique on superficiality in society."
           },
-          {
+          { 
+            "bookID": 3,
             "title": "To Kill a Mockingbird",
             "author": "Harper Lee",
             "image":
-              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg"
+              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg",
+            "description": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. Instantly successful, widely read in high schools and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer Prize."
           }
         ]
       },
@@ -29,21 +35,27 @@
         "name": "Second Shelf",
         "books": [
           {
+            "bookID": 1,
             "title": "The Great Gatsby",
             "author": "F. Scott Fitzgerald",
-            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg"
+            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg",
+            "description": "The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan."
           },
           {
+            "bookID": 2,
             "title": "The Catcher in the Rye",
             "author": "J.D. Salinger",
             "image":
-              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg"
+              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg",
+            "description": "The Catcher in the Rye is a novel by J. D. Salinger, partially published in serial form in 1945–1946 and as a novel in 1951. It was originally intended for adults, but is often read by adolescents for its themes of angst and alienation, and as a critique on superficiality in society."
           },
           {
+            "bookID": 3,
             "title": "To Kill a Mockingbird",
             "author": "Harper Lee",
             "image":
-              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg"
+              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg",
+            "description": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. Instantly successful, widely read in high schools and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer Prize."
           }
         ]
       },
@@ -52,21 +64,27 @@
         "name": "Third Shelf",
         "books": [
           {
+            "bookID": 1,
             "title": "The Great Gatsby",
             "author": "F. Scott Fitzgerald",
-            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg"
+            "image": "https://m.media-amazon.com/images/I/819wCzUTZWL._SY342_.jpg",
+            "description": "The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan."
           },
           {
+            "bookID": 2,
             "title": "The Catcher in the Rye",
             "author": "J.D. Salinger",
             "image":
-              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg"
+              "https://m.media-amazon.com/images/I/51UaPoVf6SL._SY445_SX342_.jpg",
+            "description": "The Catcher in the Rye is a novel by J. D. Salinger, partially published in serial form in 1945–1946 and as a novel in 1951. It was originally intended for adults, but is often read by adolescents for its themes of angst and alienation, and as a critique on superficiality in society."
           },
           {
+            "bookID": 3,
             "title": "To Kill a Mockingbird",
             "author": "Harper Lee",
             "image":
-              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg"
+              "https://m.media-amazon.com/images/I/51GyvEGgWAL._SY445_SX342_.jpg",
+            "description": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. Instantly successful, widely read in high schools and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer Prize."
           }
         ]
       }

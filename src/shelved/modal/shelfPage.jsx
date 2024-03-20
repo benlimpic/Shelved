@@ -7,16 +7,13 @@ import PropTypes from "prop-types";
 import ShelfCards from "../shelfCards";
 
 export default function BasicModal(props) {
-  const { shelf, open, setOpen } = props;
-  const handleClose = () => setOpen(false);
-
+  const { shelf, open, handleClose} = props;
 
 
   return (
     <div>
       <Modal
         open={open}
-        onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
@@ -30,7 +27,7 @@ export default function BasicModal(props) {
             <ClearTwoToneIcon />
           </button>
         </nav>
-            <ShelfCards shelf={shelf} />
+            < ShelfCards shelf={shelf} />
         </Box>
       </Modal>
     </div>
@@ -40,5 +37,5 @@ export default function BasicModal(props) {
 BasicModal.propTypes = {
   shelf: PropTypes.object.isRequired,
   open: PropTypes.bool.isRequired,
-  setOpen: PropTypes.func.isRequired,
+  handleClose: PropTypes.func.isRequired,
 };
